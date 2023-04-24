@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 body {
-    padding: 50px;
+    padding: 10%;
     font-family: 'Space Grotesk', sans-serif;
     color: rgb(255, 255, 255);
     //background: #000; 
@@ -44,12 +44,15 @@ padding-bottom: 0;
 h2 {
 font-size: 70px;
 margin-top: 0;
+line-height: 70px;
 }
 p {
     font-size: 24px;
     line-height: normal;
 }
-
+h3 {
+    font-size: 34px;
+}
 
 /* MUSIC */
 .page {
@@ -62,7 +65,7 @@ p {
 
 .player {
     display: block;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     /* max-width: 100vh; */
 }
 
@@ -120,6 +123,7 @@ p {
 .p {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 60px;
@@ -127,52 +131,58 @@ p {
 .g {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
     margin-right: 60px;
 }
 .b {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
     margin-right: 60px;
 }
 .w {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
     margin-right: 60px;
 }
 
 /* SOUND DIVS */
 .left {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .greensounds {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 .brownsounds {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 .right {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .pinksounds {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     
 }
 .whitesounds {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
    
 }
@@ -190,6 +200,7 @@ p {
     border-radius: 100px;
     font-size: 40px;
     font-weight: 500;
+    cursor: pointer;
 }
 .green:hover {
     background: #ffffff;
@@ -214,6 +225,7 @@ p {
     border-radius: 100px;
     font-size: 40px;
     font-weight: 500;
+    cursor: pointer;
 }
 .white:hover {
     background: #ffffff;
@@ -239,6 +251,7 @@ p {
     border-radius: 100px;
     font-size: 40px;
     font-weight: 500;
+    cursor: pointer;
 }
 .pink:hover {
     background: #ffffff;
@@ -263,6 +276,7 @@ p {
     border-radius: 100px;
     font-size: 40px;
     font-weight: 500;
+    cursor: pointer;
 }
 .brown:hover {
     background: #ffffff;
@@ -309,8 +323,9 @@ p {
 
 /* MOBILE MEDIA QUERY */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 375px), screen and (max-width: 600px) {
     body {
+        padding: 50px;
         font-family: 'Space Grotesk', sans-serif;
         //background: #000;
         
@@ -318,7 +333,7 @@ p {
                 position: fixed;
                 inset: 0;
                 z-index: -1;
-                min-height: 100vh;
+        
                 --grad: 
                     radial-gradient(at 25%, 
                             red, #{rgba(red, .2)} 50%, transparent 70%);
@@ -339,61 +354,99 @@ p {
             }
     }
 
-    /* MUSIC */
-.page {
-    display: flex;
-    flex-direction: column;
-}
-.player {
+/* TEXT */
+
+.text {
     display: block;
+    flex-wrap: nowrap;
+    margin-left: 0%;
+    max-width: 100vw;
 }
 
-.topbutt {
-    display: flex;
-    margin-bottom: 60px;
+h1 {
+    font-size: 200px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
 }
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+p {
+    font-size: 20px;
+    line-height: normal;
+}
+h3 {
+    font-size: 24px;
+}
+
+/* MUSIC */
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .player {
+        display: block;
+        align-content: center;
+        /* min-height: 100vh !important; */
+    }
+
+    /* global controls */
+
+.topbutt {
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
 .refresh {
     display: inline-block;
     box-sizing: border-box;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.236);
-    padding: 10px 35px;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 20px;
-    border: 2px solid #ffffff;
-    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
-}
-.refresh:hover {
-    background: #ffffff86;
-    border: 2px solid #ffffff;
-}
-.refresh:active {
-    background: #ffffff86;
-    border: 2px solid #ffffff;
-}
-.pause{
-    margin-left: 40px;
-    display: inline-block;
-    box-sizing: border-box;
-    height: 70px;
+    height: 110px;
     background-color: rgba(255, 255, 255, 0.236);
     border: 2px solid #ffffff;
     color: #fff;
     font-size: 20px;
-    padding: 10px 30px;
+    padding: 30px 50px;
     text-align: center;
-    border-radius: 50px;
-    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+    border-radius: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 350px;
 }
-.pause:hover {
+
+.refresh:active {
     background: #ffffff86;
     border: 2px solid #ffffff;
 }
+
+.pause{
+    margin-left: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.236);
+    border: 2px solid #ffffff;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    width: 350px;
+}
+
 .pause:active {
     background: #ffffff86;
     border: 2px solid #ffffff;
 }
+
+/* sliders + music button */
+
 .p {
     display: flex;
     flex-direction: column;
@@ -414,6 +467,9 @@ p {
     flex-direction: column;
     margin-bottom: 30px;
 }
+
+/* music div */
+
 .left {
     display: flex;
     flex-direction: row;
@@ -440,23 +496,24 @@ p {
     flex-direction: column;
     margin-left: 40px;
 }
+
+/* buttons and states */
+
 .green {
     display: inline-block;
-    margin-bottom: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.236);
     border: 2px solid #0FE07C;
     color: #0FE07C;
-    padding: 10px 20px;
+    padding: 30px 50px;
     text-align: center;
-    border-radius: 50px;
-    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+    border-radius: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 350px;
 }
-.green:hover {
-    background: #ffffff;
-    border: 2px solid #0FE07C;
-    color: #0FE07C;
-}
+
 .green:active {
     background: #ffffff;
     border: 2px solid #0FE07C;
@@ -464,22 +521,19 @@ p {
 }
 .white {
     display: inline-block;
-    margin-bottom: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.236);
     border: 2px solid #ffffff;
     color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: 30px 50px;
     text-align: center;
-    border-radius: 50px;
-    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+    border-radius: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 350px;
 }
-.white:hover {
-    background: #ffffff;
-    border: 2px solid #626262;
-    color: #626262;
 
-}
 .white:active {
     background: #ffffff;
     border: 2px solid #626262;
@@ -487,21 +541,19 @@ p {
 }
 .pink {
     display: inline-block;
-    margin-bottom: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.236);
     border: 2px solid #F22FB0;
     color: #F22FB0;
-    padding: 10px 20px;
+    padding: 30px 50px;
     text-align: center;
-    border-radius: 50px;
-    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+    border-radius: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 350px;
 }
-.pink:hover {
-    background: #ffffff;
-    border: 2px solid #F22FB0;
-    color: #F22FB0;
-}
+
 .pink:active {
     background: #ffffff;
     border: 2px solid #F22FB0;
@@ -509,45 +561,22 @@ p {
 }
 .brown {
     display: inline-block;
-    margin-bottom: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.236);
     border: 2px solid #B6730F;
     color: #B6730F;
-    padding: 10px 20px;
+    padding: 30px 50px;
     text-align: center;
-    border-radius: 50px;
-    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+    border-radius: 100px;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 350px;
 }
-.brown:hover {
-    background: #ffffff;
-    border: 2px solid #B6730F;
-    color: #B6730F;
-}
+
 .brown:active {
     background: #ffffff;
     border: 2px solid #B6730F;
     color: #B6730F;
 }
-.greenslider {
-    background: white;
-}
-.pinkslider {
-    color: white;
-}
-.whiteslider {
-    color: white;
-}
-.brownslider {
-    color: white;
-}
 
-
-/* TEXT */
-.text {
-    display: block;
-}
-h1 {
-font-size: ;
-}
-}
