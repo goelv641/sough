@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet">
+	<script defer src="assets/main.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>sough.</title> 
+</head>
+
+<body>
+    <div class="page">
+<div class="player">
+    <div class="topbutt">
+        <button class="refresh">reset</button>
+        <button class="pause">pause</button>
+    </div>
+<div class="left">
+<div class="greensounds">
+        <div class="g">
+            <button class="green">WATERFALL</button>
+            <input type="range" min="0" max="10" value="5" class="greenslider">
+        </div>  
+        <div class="g">
+            <button class="green">RIVER</button>
+            <input type="range" min="0" max="10" value="5" class="greenslider">
+        </div>
+        <div class="g">
+            <button class="green">OCEAN</button>
+            <input type="range" min="0" max="10" value="5" class="greenslider">
+        </div>
+</div>
+<div class="whitesounds">
+        <div class="w">
+            <button class="white">FAN</button>
+            <input type="range" min="0" max="10" value="5" class="whiteslider">
+        </div>
+        <div class="w">
+            <button class="white">VACCUM</button>
+            <input type="range" min="0" max="10" value="5" class="whiteslider">
+        </div>
+        <div class="w">
+            <button class="white">AIR CON</button>
+            <input type="range" min="0" max="10" value="5" class="whiteslider">
+        </div>
+</div>
+</div>
+<div class="right">
+<div class="brownsounds">
+        <div class="b">
+            <button class="brown">ROARING</button>
+            <input type="range" min="0" max="10" value="5" class="brownslider">
+        </div>
+        <div class="b">
+            <button class="brown">SHOWER</button>
+            <input type="range" min="0" max="10" value="5" class="brownslider">
+        </div>
+        <div class="b">
+            <button class="brown">THUNDER</button>
+            <input type="range" min="0" max="10" value="5" class="brownslider">
+        </div>
+</div>
+<div class="pinksounds">
+    <div class="p">
+        <button class="pink">LEAVES</button>
+        <input type="range" min="0" max="10" value="5" class="pinkslider">
+    </div>
+    <div class="p">
+        <button class="pink">RAIN</button>
+        <input type="range" min="0" max="10" value="5" class="pinkslider">
+    </div>
+    <div class="p">
+        <button class="pink">CRICKETS</button>
+        <input type="range" min="0" max="10" value="5" class="pinkslider">
+    </div>
+</div>
+</div>
+</div>
+<div class="text">
+    <header>
+        <h1>sough.</h1>
+        <h2>ambient sounds to tune out&nbsp;worries.</h2>
+    </header>
+    <div class="bodytext"></div>
+        <p>Sough is an online sound generator designed to help relax, concentrate, and mask over any distracting noises from the&nbsp;surroundings.
+            Depending on the type of sound, background noises can be distracting or even calming. The regular whirr of a fan, the gentle patter of rain against the window or the constant buzz of a white noise machine are sounds that many people find relaxing. Even the distant rumble of thunder can be soothing when you’re comfortable and safe&nbsp;indoors.
+        <p>If you need to focus…listen to white&nbsp;noise
+        <br>To calm down…try brown&nbsp;noise
+        <br>To fall asleep faster…try pink&nbsp;noise
+        <br>For study sessions…try green&nbsp;noise</p>
+    <div class="instructions">
+        <p>Refresh to reset all&nbsp;sounds
+        <br>Pause and Play the current&nbsp;sounds
+        <br>Sliders to manage volume and&nbsp;frequency</p>
+     </div>
+</div>
+<svg>
+    <filter id='f'>
+        <feTurbulence type='fractalNoise' baseFrequency='7.5'/>
+    </filter>
+</svg>
+</div>
+</body>
+
+    <script src="./Pages/sound.js"></script>
+
+</html>

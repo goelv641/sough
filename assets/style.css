@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    padding: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(255, 255, 255);
+    //background: #000; 
+        &::before, &::after {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            --grad: 
+                radial-gradient(at 25%, 
+                        red, #{rgba(red, .2)} 50%, transparent 70%);
+            --mask: var(--grad), var(--grad), var(--grad);
+            -webkit-mask: var(--mask);
+            -webkit-mask-composite: source-in;
+                            mask: var(--mask);
+                            mask-composite: intersect;
+            mix-blend-mode: color;
+            content: ''
+        }
+        &::before {
+            background: #000;
+            filter: url(#f)
+        }
+        &::after {
+            background: linear-gradient(90deg, purple, navy 20%, aqua);
+        }
+    }
+/* MUSIC */
+.page {
+    display: flex;
+    flex-direction: column;
+}
+.player {
+    display: block;
+}
+
+.topbutt {
+    display: flex;
+    margin-bottom: 60px;
+}
+.refresh {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.236);
+    padding: 10px 35px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+}
+.refresh:hover {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.refresh:active {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.pause{
+    margin-left: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.236);
+    border: 1px solid #ffffff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 50px;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+}
+.pause:hover {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.pause:active {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.g {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.b {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.w {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+}
+.greensounds {
+    display: flex;
+    flex-direction: column;
+}
+.brownsounds {
+    display: flex;
+    flex-direction: column;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.pinksounds {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.whitesounds {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.green {
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-bottom: 14px;
+    background-color: rgba(255, 255, 255, 0.236);
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+}
+.green:hover {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.green:active {
+    background: #ffffff;
+    border: 1px solid #0FE07C;
+    color: #0FE07C;
+}
+.white {
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-bottom: 14px;
+    background-color: rgba(255, 255, 255, 0.236);
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+}
+.white:hover {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.white:active {
+    background: #ffffff;
+    border: 1px solid #626262;
+    color: #626262;
+}
+.pink {
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-bottom: 14px;
+    background-color: rgba(255, 255, 255, 0.236);
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+}
+.pink:hover {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.pink:active {
+    background: #ffffff;
+    border: 1px solid #F22FB0;
+    color: #F22FB0;
+}
+.brown {
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-bottom: 14px;
+    background-color: rgba(255, 255, 255, 0.236);
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+}
+.brown:hover {
+    background: #ffffff86;
+    border: 1px solid #ffffff;
+}
+.brown:active {
+    background: #ffffff;
+    border: 1px solid #B6730F;
+    color: #B6730F;
+}
+.greenslider {
+    background: white;
+}
+.pinkslider {
+    color: white;
+}
+.whiteslider {
+    color: white;
+}
+.brownslider {
+    color: white;
+}
+
+
+/* TEXT */
+.text {
+    display: block;
+}
+h1 {
+font-size: ;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Space Grotesk', sans-serif;
+        //background: #000;
+            &::before, &::after {
+                position: fixed;
+                inset: 0;
+                z-index: -1;
+                --grad: 
+                    radial-gradient(at 25%, 
+                            red, #{rgba(red, .2)} 50%, transparent 70%);
+                --mask: var(--grad), var(--grad), var(--grad);
+                -webkit-mask: var(--mask);
+                -webkit-mask-composite: source-in;
+                                mask: var(--mask);
+                                mask-composite: intersect;
+                mix-blend-mode: color;
+                content: ''
+            }
+            &::before {
+                background: #000;
+                filter: url(#f)
+            }
+            &::after {
+                background: linear-gradient(90deg, purple, navy 20%, aqua);
+            }
+    }
+}
