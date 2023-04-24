@@ -1,6 +1,6 @@
 // GREEN
 let greenbuttons=document.querySelectorAll(".green")
-let greensounds=["P5 Sounds/soft-rain-ambient-111154.mp3", "./P5 Sounds/calm-river-ambience-loop-125071.mp3", "./P5 Sounds/ambient-noise-142658.mp3"]
+let greensounds=["./P5 Sounds/Waterfall.mp3", "./P5 Sounds/river.mp3", "./P5 Sounds/ocean.mp3"]
 
 let greenaudio=[]
 greensounds.forEach(sound => {
@@ -23,7 +23,7 @@ greenslider.forEach((slider, i) => {
 
 // WHITE
   let whitebuttons=document.querySelectorAll(".white")
-let whitesounds=["./P5 Soun./ambience-sounds-8-15136.mp3", "./P5 Sounds/ambient-3-13571.mp3", "./P5 Sounds/ambient-noise-142658.mp3"]
+let whitesounds=["./P5 Sounds/air con.mp3", "./P5 Sounds/room static.mp3", "./P5 Sounds/fan.mp3"]
 let whitechecks=[true,true,true]
 let whiteaudio=[]
 
@@ -46,7 +46,7 @@ whitebuttons.forEach((button, i) => {
   
 // BROWN
 let brownbuttons=document.querySelectorAll(".brown")
-let brownsounds=["./P5 Sounds/ambience-sounds-8-15136.mp3", "./P5 Sounds/ambient-3-13571.mp3", "./P5 Sounds/ambient-noise-142658.mp3"]
+let brownsounds=["./P5 Sounds/0howling wind.mp3", "./P5 Sounds/shower-35087.mp3", "./P5 Sounds/natural-thunder-113219.mp3"]
 let brownchecks=[true,true,true]
 let brownaudio=[]
 brownsounds.forEach(sound => {
@@ -101,11 +101,11 @@ function pausemusic(array, i, element){
 
 
 // PINK
-let pinkbuttons=document.querySelectorAll(".brown")
-let pinksounds=["./P5 Sounds/ambience-sounds-8-15136.mp3", "./P5 Sounds/ambient-3-13571.mp3", "./P5 Sounds/ambient-noise-142658.mp3"]
+let pinkbuttons=document.querySelectorAll(".pink")
+let pinksounds=["./P5 Sounds/rusting leaves.mp3", "./P5 Sounds/soft rain.mp3", "./P5 Sounds/0crickets.mp3"]
 let pinkchecks=[true,true,true]
 let pinkaudio=[]
-brownsounds.forEach(sound => {
+pinksounds.forEach(sound => {
     pinkaudio.push (new Audio(sound))
 });
 pinkbuttons.forEach((button, i) => {
