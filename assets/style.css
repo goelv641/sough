@@ -74,6 +74,7 @@ h3 {
     /* width: 300px;
     height: 100px; */
 }
+
 .refresh:hover {
     background: #ffffff3e;
     border: 2px solid #ffffff;
@@ -108,6 +109,7 @@ h3 {
     /* width: 300px; */
     /* height: 100px; */
 }
+
 .pause:hover {
     background: #ffffff3e;
     border: 2px solid #ffffff;
@@ -436,7 +438,7 @@ h3 {
     top: 0;
     left: 0;
     z-index: -1;
-    background: radial-gradient(ellipse at center, #ffdead, #eeb968, #ff8378, #ff9ec3, #9ce5ff, #44d6b4,#ad82f8);
+    background: radial-gradient(ellipse at center, #eeb968, #ff8378, #ff9ec3, #ad82f8,#9ce5ff, #44d6b4,#adffb8);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     }
@@ -536,7 +538,6 @@ h3 {
                 background-color: #ffffff00;
                 border: 2px solid #ffffff;
                 color: #fff;
-                /* font-size: 16px; */
                 padding: 10px 15px;
                 text-align: center;
                 border-radius: 50px;
@@ -562,7 +563,6 @@ h3 {
                 background-color: #ffffff00;
                 border: 2px solid #ffffff;
                 color: #fff;
-                /* font-size: 16px; */
                 padding: 10px 15px;
                 text-align: center;
                 border-radius: 50px;
@@ -581,7 +581,6 @@ h3 {
             .pause__icon {
                 font-size: 1em;
             }
-    
 
             /* sliders + music button */
 
