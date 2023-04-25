@@ -7,27 +7,19 @@ body {
     padding: 9%;
     font-family: 'Space Grotesk', sans-serif;
     color: rgb(255, 255, 255);
-    /* align-items: center; */
-    /* position: relative; */
+    position: relative;
     }
 
-.help {
-        margin-right: 3%;
-        /* align-items: center; */
-    }
     
 .page {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
-        /* align-items: center; */
     }
     
 .player {
         display: block;
-        margin-right: 100px;
-        /* align-items: center; */
-        /* width: 50%; */
+        margin-right: 300px;
     }
 
 /* TEXT */
@@ -40,7 +32,7 @@ body {
 h1 {
     font-size: 150px;
     margin: 0%;
-    margin-top: -40px;
+    /* margin-top: -40px; */
 }
 h2 {
     font-size: 70px;
@@ -64,10 +56,9 @@ h3 {
 /* GLOBAL CONTROLS */
 
 .topbutt {
-    display: flex;
-    margin-bottom: 60px;
-    /* align-items: center; */
-    /* position: static; */
+    display: block;
+    margin-bottom: 100px;
+    margin-right: 0%;
 }
 .refresh {
     display: inline-flex;
@@ -76,12 +67,12 @@ h3 {
     background-color: #ffffff00;
     border: 2px solid #ffffff;
     color: #fff;
-    font-size: 20px;
-    padding: 10px 35px;
+    font-size: 50px;
+    padding: 3% 7%;
     text-align: center;
-    border-radius: 50px;
-    font-size: 30px;
-    font-weight: 700;
+    border-radius: 100px;
+    /* width: 300px;
+    height: 100px; */
 }
 .refresh:hover {
     background: #ffffff3e;
@@ -110,12 +101,13 @@ h3 {
     border: 2px solid #ffffff;
     color: #fff;
     font-size: 20px;
-    padding: 10px 35px;
+    padding: 3% 7%;
     text-align: center;
-    border-radius: 50px;
-    font-size: 30px;
-    font-weight: 700;
-    margin-right: 30px;
+    font-size: 50px;
+    border-radius: 100px;
+    margin-right: 60px;
+    /* width: 300px; */
+    /* height: 100px; */
 }
 .pause:hover {
     background: #ffffff3e;
@@ -445,7 +437,7 @@ h3 {
     top: 0;
     left: 0;
     z-index: -1;
-    background: radial-gradient(ellipse at center, #F2B04C, #F78154, #F24131);
+    background: radial-gradient(ellipse at center, #ffdead, #eeb968, #ff8378, #ff9ec3, #9ce5ff, #44d6b4,#ad82f8);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     }
@@ -471,15 +463,25 @@ h3 {
     background-position: 0% 50%;
     }
     }
-    
+
+    .help {
+        max-width: 100%;
+        margin: 0%;
+    }
 
 /* MOBILE MEDIA QUERY */
 
 @media only screen and (min-width: 200px) and (max-width: 600px) {
                 body {
                     font-family: 'Space Grotesk', sans-serif;
-                   max-width: 100vw;
+                   max-width: 100%;
                    padding: 4%;
+                   position: relative;
+                }
+
+                .help {
+                    max-width: 100%;
+                    margin: 0%;
                 }
 
             /* TEXT */
@@ -487,13 +489,13 @@ h3 {
             .text {
                 display: block;
                 flex-wrap: nowrap;
-                margin-left: 0%;
+                margin: 0%;
                 width: 100%;
             
             }
 
             h1 {
-                font-size: 50px;
+                font-size: 70px;
                 margin-bottom: 10px;
                 margin-top: 60px;
                 padding-bottom: 0;
@@ -504,8 +506,8 @@ h3 {
                 font-weight: 500;
             }
             p {
-                font-size: 20px;
-                line-height: 26px;
+                font-size: 18px;
+                line-height: 24px;
                 width: 100%;
             }
             h3 {
@@ -588,6 +590,7 @@ h3 {
                 display: flex;
                 flex-direction: column;
                 margin: 0%;
+                padding: 0%;
             }
 
             /* music div */
@@ -600,33 +603,37 @@ h3 {
                 display: flex;
                 flex-direction: column;
                 padding-right: 30px;
-                /* width: fit-content; */
+                margin: 0%;
             }
 
             .greensounds {
                 display: flex;
                 flex-direction: row;
+                margin: 0%;
             }
 
             .brownsounds {
                 display: flex;
                 flex-direction: row;
+                margin: 0%;
             }
 
             .right {
                 display: flex;
                 flex-direction: column;
-                /* width: fit-content; */
+                margin: 0%;
             }
             
             .pinksounds {
                 display: flex;
                 flex-direction: row;
+                margin: 0%;
             }
 
             .whitesounds {
                 display: flex;
-                flex-direction: row;  
+                flex-direction: row; 
+                margin: 0%; 
             }
 
             /* sound buttons */
@@ -694,17 +701,6 @@ h3 {
                 width: 150px;
                 height: 50px;
             }
-
-            /* .gradient-background {
-                height: 100%;
-                width: 100%;
-                min-height: 100vh;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                }
-                 */
 
             /* pink slider */
             .pinkslider {
