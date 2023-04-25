@@ -5,83 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/style.css" rel="stylesheet">
-	<title>sough.</title> 
+    <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'> -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	<title>soother.</title> 
 </head>
 
 <body>
     <div class="page">
         <div class="help">
-        <div class="topbutt">
-            <button class="pause">⏯</button>
-            <button class="refresh">↺</button>
+            <div class="topbutt">
+                <button type="button" class="pause">
+                    <span class="pause__text"></span>
+                    <span class="pause__icon">
+                        <!-- <ion-icon class name="pause-sharp"></ion-icon> -->
+                        <i class="fi fi-br-play-pause"></i>
+                    </span>
+                </button>
+                
+                <button type="button" class="refresh">
+                    <span class="refresh__text"></span>
+                    <span class="refresh__icon">
+                        <i class="fi fi-br-rotate-right"></i>
+                        <!-- <ion-icon name="refresh-sharp"></ion-icon> -->
+                    </span>
+                </button>
+            </div>
+        <div class="player">
+            <div class="left">
+                <div class="whitesounds">
+                    <div class="p">
+                        <button class="white">FAN</button>
+                        <input type="range" min="0" max="10" value="5" class="whiteslider">
+                    </div>
+                    <div class="p">
+                        <button class="white">STATIC</button>
+                        <input type="range" min="0" max="10" value="5" class="whiteslider">
+                    </div>
+                    <div class="p">
+                        <button class="white">AIR CON</button>
+                        <input type="range" min="0" max="10" value="5" class="whiteslider">
+                    </div>
+                </div>  
+                <div class="greensounds">
+                     <div class="p">
+                            <button class="green">WATERFALL</button>
+                            <input type="range" min="0" max="10" value="5" class="greenslider">
+                    </div>  
+                    <div class="p">
+                            <button class="green">RIVER</button>
+                            <input type="range" min="0" max="10" value="5" class="greenslider">
+                     </div>
+                    <div class="p">
+                            <button class="green">OCEAN</button>
+                            <input type="range" min="0" max="10" value="5" class="greenslider">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                    <div class="brownsounds">
+                            <div class="p">
+                                <button class="brown">WIND</button>
+                                <input type="range" min="0" max="10" value="5" class="brownslider">
+                            </div>
+                            <div class="p">
+                                <button class="brown">SHOWER</button>
+                                <input type="range" min="0" max="10" value="5" class="brownslider">
+                            </div>
+                            <div class="p">
+                                <button class="brown">THUNDER</button>
+                                <input type="range" min="0" max="10" value="5" class="brownslider">
+                            </div>
+                    </div>
+                    <div class="pinksounds">
+                        <div class="p">
+                            <button class="pink">LEAVES</button>
+                            <input type="range" min="0" max="10" value="5" class="pinkslider">
+                        </div>
+                        <div class="p">
+                            <button class="pink">RAIN</button>
+                            <input type="range" min="0" max="10" value="5" class="pinkslider">
+                        </div>
+                        <div class="p">
+                            <button class="pink">CRICKETS</button>
+                            <input type="range" min="0" max="10" value="5" class="pinkslider">
+                        </div>
+            </div>
+            </div>
         </div>
-    <div class="player">
-<div class="left">
-    
-<div class="greensounds">
-        <div class="p">
-            <button class="green">WATERFALL</button>
-            <input type="range" min="0" max="10" value="5" class="greenslider">
-        </div>  
-        <div class="p">
-            <button class="green">RIVER</button>
-            <input type="range" min="0" max="10" value="5" class="greenslider">
         </div>
-        <div class="p">
-            <button class="green">OCEAN</button>
-            <input type="range" min="0" max="10" value="5" class="greenslider">
-        </div>
-</div>
-<div class="whitesounds">
-        <div class="p">
-            <button class="white">FAN</button>
-            <input type="range" min="0" max="10" value="5" class="whiteslider">
-        </div>
-        <div class="p">
-            <button class="white">STATIC</button>
-            <input type="range" min="0" max="10" value="5" class="whiteslider">
-        </div>
-        <div class="p">
-            <button class="white">AIR CON</button>
-            <input type="range" min="0" max="10" value="5" class="whiteslider">
-        </div>
-</div>
-</div>
-<div class="right">
-<div class="brownsounds">
-        <div class="p">
-            <button class="brown">WIND</button>
-            <input type="range" min="0" max="10" value="5" class="brownslider">
-        </div>
-        <div class="p">
-            <button class="brown">SHOWER</button>
-            <input type="range" min="0" max="10" value="5" class="brownslider">
-        </div>
-        <div class="p">
-            <button class="brown">THUNDER</button>
-            <input type="range" min="0" max="10" value="5" class="brownslider">
-        </div>
-</div>
-<div class="pinksounds">
-    <div class="p">
-        <button class="pink">LEAVES</button>
-        <input type="range" min="0" max="10" value="5" class="pinkslider">
     </div>
-    <div class="p">
-        <button class="pink">RAIN</button>
-        <input type="range" min="0" max="10" value="5" class="pinkslider">
-    </div>
-    <div class="p">
-        <button class="pink">CRICKETS</button>
-        <input type="range" min="0" max="10" value="5" class="pinkslider">
-    </div>
-</div>
-</div>
-</div>
-</div>
 <div class="text">
     <header>
-        <h1>sough.</h1>
+        <h1>soother.</h1>
         <h2>ambient sounds to tune out&nbsp;worries.</h2>
     </header>
     <div class="bodytext"></div>
@@ -105,7 +120,7 @@
     </filter>
 </svg> -->
 </div>
-
 </body>
-<script src="assets/main.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </html>
