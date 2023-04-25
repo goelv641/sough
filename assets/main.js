@@ -72,14 +72,20 @@ function playmusic(array, i, element){
     if(!audio.paused) { /* Check if it's not paused */
         audio.pause();  /* To pause the audio */
         audio.currentTime = 0;  /* To reset the time back to 0 */
-        element.style.backgroundColor="rgba(255, 255, 255, 0.236)"
+        // element.style.backgroundColor="rgba(255, 255, 255, 0.236)"
         element.classList.remove("clicked")
     }
 
 
     else {
         audio.play();  /* To make it play again */
-        element.style.borderColor="white"
+        // element.style.borderColor="white"
+        element.style.backgroundColor="white"
+        // element.style.textColor="grey"
+        if (element.style.color=="white"){
+          element.style.color="grey"
+        }
+
         element.classList.add("clicked")
     }
 }
@@ -89,13 +95,14 @@ function pausemusic(array, i, element){
   if(!audio.paused) { /* Check if it's not paused */
       audio.pause();  /* To pause the audio */
       audio.currentTime = 0;  /* To reset the time back to 0 */
-      element.style.backgroundColor="rgba(255, 255, 255, 0.236)"
+      // element.style.backgroundColor="white"
       element.classList.remove("clicked")
       element.classList.add("clicked2")
   }
   else if(element.classList.contains("clicked") || element.classList.contains("clicked2")){
     audio.play();  /* To make it play again */
-    element.style.borderColor="#0FE07C"
+    // element.style.borderColor="#0FE07C"
+    // element.style.backgroundColor="white"
 }
 }
 
